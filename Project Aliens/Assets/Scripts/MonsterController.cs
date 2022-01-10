@@ -16,7 +16,7 @@ public class MonsterController : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        animController = GetComponent<Animator>();
+        animController = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -34,7 +34,13 @@ public class MonsterController : MonoBehaviour
                 float rotationY = Mathf.SmoothDampAngle(transform.eulerAngles.y, rotationToLookAt.eulerAngles.y, ref rotateVelocity, rotateSpeedMovement * (Time.deltaTime *5));
 
                 transform.eulerAngles = new Vector3(0, rotationY, 0);
+
+                animController.SetBool("IsRunning", true);
             }
+        }
+        if(transform.position == agent.destination)
+        {
+            animController.SetBool("IsRunning", false);
         }
     }
 }

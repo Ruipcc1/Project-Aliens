@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AnkyloController
+  m_Controller: {fileID: 9100000, guid: 3cd627ebb480af442be908ff26cbd9a3, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: -3100369314251171874, guid: 12e52e465ed793a4d801955e9f964a82, type: 3}
+    m_OverrideClip: {fileID: 1827226128182048838, guid: 89fdb97205a50bf4fbd3ebc478b02624, type: 3}
+  - m_OriginalClip: {fileID: 6564411413370888346, guid: 16114d403eabb53438de032c6f0d1deb, type: 3}
+    m_OverrideClip: {fileID: 1827226128182048838, guid: 862a589d4f45258448713b7178e01589, type: 3}
